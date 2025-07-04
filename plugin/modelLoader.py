@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 
 # Initialize the model and pipeline
-model = pipeline("question-answering", model=r"distilbert-base-uncased-distilled-squad")
+model = pipeline("question-answering", model="distilbert/distilbert-base-uncased-distilled-squad")
 
 # Load dataset
 data = pd.read_csv('chatbot.csv')
